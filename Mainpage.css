@@ -1,7 +1,12 @@
 /* Comme indiqué dans la consigne, je vais démarrer avec une philosophie mobile-first */ 
 
-@media screen and (max-width: 1024px) { 
 
+
+/* Responsive pour les mobiles, base du projet */ 
+@media screen and (max-height: 1024px) { 
+    /* Je reset les marges présentes par défaut pour avoir un controle complet des proportions, 
+    j'applique la police d'écriture déclarée dans le HTML et enfin j'applique des codes 
+    couleurs qui seront donc appliqué comme base sur mes pages */ 
     body {
         margin: 0;
         padding: 0;
@@ -18,9 +23,12 @@
         
     }
 
+
+
+
     #MainimageLogo {
-        max-width: 20%;
-        max-height: 20%;
+        max-width: 50%;
+        max-height: 50%;
         min-width: 50%;
         min-height: 50%;
         margin: 25%;
@@ -56,6 +64,10 @@
         
     }
 
+
+
+    /* Tentative de styliser les liens hypertextes menant aux pages, malheureusement ça ne rend pas aussi bien que je l'espérais et je ne parviens pas à trouver
+    un résultat satisfaisant */ 
     .NavLabel {
         font-size: 1.2em;
         color: #BDBDBD;
@@ -105,61 +117,678 @@
 
   /* Stylisation du footer */ 
 
+
+   
     #ContactInfos {
         background-color: #252525;
         position:absolute;
         width: 100%;
     }
 
-    .ContactContent {
-        color: #BDBDBD;
-        font-weight: 200;
-        font-size: 1.2em;
-        
-    }
 
-    #EmailContact {
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-
-
-    #PhoneContact {
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-
-    #LetterContact {
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-
-
-
+    /* Section "qui sommes nous ?" */
     .WhoareweContent {
         color: #BDBDBD;
         font-weight: 200;
         font-size: 0.6em;
         font-style: italic;
         text-align: center;
+        
+    }
+
+
+    #WhoareweTitle {
+        margin-bottom: -2%;
+        color: whitesmoke;
+    }
+
+    #WhoareweText {
+        margin-bottom: 10%;
+    }
+
+
+    /* Section avec les infos de contact */
+    #ContactUs {
+        color: whitesmoke;
+        font-size: 1.2em;
+    }
+
+
+
+    .ContactContent {
+        color: #DBDBDB;
+        font-weight: 200;
+        font-size: 1em;
+        line-height: -50%;
+        text-decoration: dashed;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive pour les tablettes, pour apporters quelques petites corrections */ 
+
+@media screen and (min-height: 1024px) { 
+    /* Je reset les marges présentes par défaut pour avoir un controle complet des proportions, 
+    j'applique la police d'écriture déclarée dans le HTML et enfin j'applique des codes 
+    couleurs qui seront donc appliqué comme base sur mes pages */ 
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: whitesmoke;
+        background-color:  #212121;
+    }
+
+    /* Stylisation du header */ 
+
+
+    #header {
+        background-color:  #212121;
         margin-bottom: 10%;
     }
 
 
 
 
+    #MainimageLogo {
+        max-width: 50%;
+        max-height: 50%;
+        min-width: 50%;
+        min-height: 50%;
+        margin: 25%;
+        margin-bottom: -10%;
+        margin-top: 0px;
+        justify-self: center;
+    }
+
+    #MainTitle {
+        font-size: 3em;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: -2%;
+        color: #E0E0E0;
+        
+        }
+
+    #MainDescription {
+        font-size: 1.5em;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        color: #BDBDBD;
+    }
+
+    /* Stylisation du menu de navigation */ 
+
+    #Nav {
+        background-color: #252525;
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+    /* Tentative de styliser les liens hypertextes menant aux pages, malheureusement ça ne rend pas aussi bien que je l'espérais et je ne parviens pas à trouver
+    un résultat satisfaisant */ 
+    .NavLabel {
+        font-size: 1.2em;
+        color: #BDBDBD;
+        text-decoration: dashed;
+    }
+
+    .NavLabel:hover {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    }
+
+    
+    .NavLabel:active {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    } 
+
+
+    /* Stylisation du contenu de la page */ 
 
 
 
 
+    #MainContent {
+        text-align: center;
+    }
+
+    .ContentTitle {
+        color: whitesmoke;
+        font-weight: 900;
+        font-size: 2.4em;
+    }
+
+
+    .ContentBlock {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.5em;
+        margin-top: -2%;
+        margin-bottom: 15%;
+    }
+
+    #StoryTitle {
+        margin-top: 20%;
+    }
+
+
+  /* Stylisation du footer */ 
+
+
+   
+    #ContactInfos {
+        background-color: #252525;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+
+    /* Section "qui sommes nous ?" */
+    .WhoareweContent {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: center;
+        
+    }
+
+
+    #WhoareweTitle {
+        margin-bottom: 2%;
+        color: whitesmoke;
+    }
+
+    #WhoareweText {
+        margin-bottom: 10%;
+    }
+
+
+    /* Section avec les infos de contact */
+    #ContactUs {
+        color: whitesmoke;
+        font-size: 1.2em;
+        text-align: center;
+        
+    }
 
 
 
-
-
-
-
-
+    .ContactContent {
+        color: #DBDBDB;
+        font-weight: 200;
+        font-size: 1em;
+        line-height: -50%;
+        text-decoration: dashed;
+        
+        
+    }
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive pour les grandes tablettes, pour apporters quelques petites corrections */ 
+
+@media screen and (min-width: 1023px) { 
+    /* Je reset les marges présentes par défaut pour avoir un controle complet des proportions, 
+    j'applique la police d'écriture déclarée dans le HTML et enfin j'applique des codes 
+    couleurs qui seront donc appliqué comme base sur mes pages */ 
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: whitesmoke;
+        background-color:  #212121;
+    }
+
+    /* Stylisation du header */ 
+
+
+    #header {
+        background-color:  #212121;
+        margin-bottom: 20%;
+    }
+
+
+
+
+    #MainimageLogo {
+        max-width: 50%;
+        max-height: 50%;
+        min-width: 50%;
+        min-height: 50%;
+        margin: 25%;
+        margin-bottom: -15%;
+        margin-top: 0px;
+        justify-self: center;
+    }
+
+    #MainTitle {
+        font-size: 6em;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: -5%;
+        color: #E0E0E0;
+        
+        }
+
+    #MainDescription {
+        font-size: 2em;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        color: #BDBDBD;
+    }
+
+    /* Stylisation du menu de navigation */ 
+
+    #Nav {
+        background-color: #252525;
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+    /* Tentative de styliser les liens hypertextes menant aux pages, malheureusement ça ne rend pas aussi bien que je l'espérais et je ne parviens pas à trouver
+    un résultat satisfaisant */ 
+    .NavLabel {
+        font-size: 2.5em;
+        color: #BDBDBD;
+        text-decoration: dashed;
+    }
+
+    .NavLabel:hover {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    }
+
+    
+    .NavLabel:active {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    } 
+
+
+    /* Stylisation du contenu de la page */ 
+
+
+
+
+    #MainContent {
+        text-align: center;
+    }
+
+    .ContentTitle {
+        color: whitesmoke;
+        font-weight: 900;
+        font-size: 2.4em;
+    }
+
+
+    .ContentBlock {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.2em;
+        margin-top: -2%;
+        margin-bottom: 15%;
+    }
+
+    #StoryTitle {
+        margin-top: 20%;
+    }
+
+
+  /* Stylisation du footer */ 
+
+
+   
+    #ContactInfos {
+        background-color: #252525;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+
+    /* Section "qui sommes nous ?" */
+    .WhoareweContent {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: center;
+        
+    }
+
+
+    #WhoareweTitle {
+        margin-bottom: -2%;
+        color: whitesmoke;
+    }
+
+    #WhoareweText {
+        margin-bottom: 10%;
+    }
+
+
+    /* Section avec les infos de contact */
+    #ContactUs {
+        color: whitesmoke;
+        font-size: 1.2em;
+        text-align: center;
+        
+    }
+
+
+
+    .ContactContent {
+        color: #DBDBDB;
+        font-weight: 200;
+        font-size: 1em;
+        line-height: -50%;
+        text-decoration: dashed;
+        
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive pour les ordinateurs*/ 
+@media screen and (min-width: 1283px) { 
+    /* Je reset les marges présentes par défaut pour avoir un controle complet des proportions, 
+    j'applique la police d'écriture déclarée dans le HTML et enfin j'applique des codes 
+    couleurs qui seront donc appliqué comme base sur mes pages */ 
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: whitesmoke;
+        background-color:  #212121;
+    }
+
+    /* Stylisation du header */ 
+
+
+    #header {
+        background-color:  #212121;
+        margin-bottom: 20%;
+    }
+
+
+
+
+    #MainimageLogo {
+        max-width: 50%;
+        max-height: 50%;
+        min-width: 50%;
+        min-height: 50%;
+        margin: 25%;
+        margin-bottom: -8%;
+        margin-top: 0px;
+        justify-self: center;
+    }
+
+    #MainTitle {
+        font-size: 6em;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: -2%;
+        color: #E0E0E0;
+        
+        }
+
+    #MainDescription {
+        font-size: 2.4em;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        color: #BDBDBD;
+    }
+
+    /* Stylisation du menu de navigation */ 
+
+    #Nav {
+        background-color: #252525;
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+    /* Tentative de styliser les liens hypertextes menant aux pages, malheureusement ça ne rend pas aussi bien que je l'espérais et je ne parviens pas à trouver
+    un résultat satisfaisant */ 
+    .NavLabel {
+        font-size: 3em;
+        color: #BDBDBD;
+        text-decoration: dashed;
+    }
+
+    .NavLabel:hover {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    }
+
+    
+    .NavLabel:active {
+        background-color: #2e2e2e;
+        color: whitesmoke;
+    } 
+
+
+    /* Stylisation du contenu de la page */ 
+
+
+
+
+    #MainContent {
+        text-align: center;
+    }
+
+    .ContentTitle {
+        color: whitesmoke;
+        font-weight: 900;
+        font-size: 2.8em;
+    }
+
+
+    .ContentBlock {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.6em;
+        margin-top: -2%;
+        margin-bottom: 15%;
+    }
+
+    #StoryTitle {
+        margin-top: 20%;
+    }
+
+
+  /* Stylisation du footer */ 
+
+
+   
+    #ContactInfos {
+        background-color: #252525;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+
+    /* Section "qui sommes nous ?" */
+    .WhoareweContent {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 2.4em;
+        font-style: italic;
+        text-align: center;
+        
+    }
+
+
+    #WhoareweTitle {
+        margin-bottom: 5%;
+        color: whitesmoke;
+    }
+
+    #WhoareweText {
+        margin-bottom: 10%;
+    }
+
+
+    /* Section avec les infos de contact */
+    #ContactUs {
+        color: whitesmoke;
+        font-size: 2.4em;
+        text-align: center;
+        
+    }
+
+
+
+    .ContactContent {
+        color: #DBDBDB;
+        font-weight: 200;
+        font-size: 2em;
+        line-height: -50%;
+        text-decoration: dashed;
+        
+        
+    }
+
+}
