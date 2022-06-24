@@ -105,14 +105,45 @@
 
   /* Stylisation du footer */ 
 
-    #footer {
-        background-color:  #212121;
+    #ContactInfos {
+        background-color: #252525;
+        position:absolute;
+        width: 100%;
+    }
+
+    .ContactContent {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 1.2em;
+        
+    }
+
+    #EmailContact {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+
+    #PhoneContact {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    #LetterContact {
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
 
 
 
-
-
+    .WhoareweContent {
+        color: #BDBDBD;
+        font-weight: 200;
+        font-size: 0.6em;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10%;
+    }
 
 
 
