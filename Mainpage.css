@@ -1,6 +1,6 @@
 /* Comme indiqué dans la consigne, je vais démarrer avec une philosophie mobile-first */ 
 
-
+/* CSS de la page principale de l'association */ 
 
 /* Responsive pour les mobiles, base du projet */ 
 @media screen and (max-height: 1024px) { 
@@ -243,7 +243,8 @@
     /* Tentative de styliser les liens hypertextes menant aux pages, malheureusement ça ne rend pas aussi bien que je l'espérais et je ne parviens pas à trouver
     un résultat satisfaisant */ 
     .NavLabel {
-        font-size: 1.2em;
+        font-size: 2.4em;
+        
         color: #BDBDBD;
         text-decoration: dashed;
     }
