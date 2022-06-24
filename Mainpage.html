@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+
+  <!-- Page par défaut, qui va contenir les informations de bases du site et de l'assos -->
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="Mainpage.css" rel="stylesheet" type="text/css" />
+
+  <!-- Ici j'intègre une police de la bibliothèque de police de google, pour simuler la demande d'un client qui voudrais une police particulière pour son site  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <!-- J'ai choisi de réaliser mon site en anglais, pour une plus grande disponibilité a l'international, dans le contexte d'une association, cela me semble nécessaire  -->
+
+    <!-- Pour le layout de mon site j'ai décider de créer un header, classique, qui contiendra le nom de l'association et un logo fictif -->
+    <!-- En dessous de ce header il y aura un menu de navigation pour alterner entre les deux pages, je vais surement devoir faire un peu de javascript pour styliser tout ça -->
+    <!-- Enfin, il y aura les informations relatives à l'association puis un footer qui contiendra les informations de contact, classique encore une fois  -->
+    <!-- PS: L'association est complètement fictive, mais quelque peu inspirée d'amnesty international  -->
+    
+
+
+
+
+
+
+
+    <!-- J'aime généralement englober tout le contenu de ma page dans un wrapper, pour ensuite le styliser plus facilement via CSS Grid ou en cas de besoin, 
+      cela rend généralement les choses plus simples  -->
+    <!-- J'ai par la suite attribué un ID et une classe aux éléments selon leurs besoins, en principe les classes permettront aux éléments d'être stylisé de la même façon,
+    pour avoir un design plus homogène -->
+    <div id="wrapper">
+
+    
+
+      <!-- Le Header  -->
+      <header id="header">
+        <img src="images/logoicon.png" alt="Error while loading the image" id="MainimageLogo"></img>
+        <h1 id="MainTitle">Imaginative</h1>
+        <p id="MainDescription">For the voices that can't be heard</p>
+      </header>
+
+      <!-- Le Menu de navigation  -->
+      <nav id="Nav">
+        <a href="./Mainpage.html" id="MainpageLabel" class="NavLabel">Main Page</a>
+        <a href="./Eventpage.html" id="EventpageLabel" class="NavLabel">Our activities</a>
+      </nav>
+
+      <!-- Le contenu général de la page  -->
+      <main id="MainContent">
+        <!-- Un bref paragraphe sur l'histoire de l'assos  -->
+        <h2 id="StoryTitle" class="ContentTitle">Our Story</h2>
+        <p id="StoryBlock" class="ContentBlock">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <!-- Un bref paragraphe sur les objectifs de l'assos  -->
+        <h2 id="ObjectivesTitle" class="ContentTitle">Our Goals</h2>
+        <p id="ObjectivesBlock" class="ContentBlock">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <!-- Un bref paragraphe sur la philosophie de l'assos  -->
+        <h2 id="PhiloTitle" class="ContentTitle">Our Philosophy</h2>
+        <p id="PhiloBlock" class="ContentBlock">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <!-- Un bref paragraphe la méthode de financement de l'assos  -->
+        <h2 id="FundingTitle" class="ContentTitle">Our funding</h2>
+        <p id="FundingBlock" class="ContentBlock">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </main>
+
+
+      <!-- Le Footer -->
+      <footer id="ContactInfos">
+
+        <!-- Informations de contact  -->
+        <p id="EmailContactMessage" class="ContactMessage">@</p>
+        <a href="mailto:ImaginativeInternational@gmail.com" id="EmailContact" class="ContactContent">ImaginativeInternational@gmail.com</a>
+        
+        <p id="PhoneContactMessage" class="ContactMessage">📱</p>
+        <a href="tel:+000000000" id="PhoneContact" class="ContactContent">+000000000</a>
+
+        <p id="LetterContactMessage" class="ContactMessage">📧</p>
+        <p id="LetterContact" class="ContactContent">177A Bleecker Street, New York</p>
+
+
+
+      </footer>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+/* Comme indiqué dans la consigne, je vais démarrer avec une philosophie mobile-first */ 
+
+@media screen and (max-width: 1024px) { 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    background-color:  #212121;
+}
+
+/* Stylisation du header */ 
+
+
+#header {
+    background-color:  #212121;
+    
+}
+
+#MainimageLogo {
+    max-width: 20%;
+    max-height: 20%;
+    min-width: 50%;
+    min-height: 50%;
+    margin: 25%;
+
+
+    margin-top: 10%;
+    margin-bottom: -20%;
+    justify-self: center;
+}
+
+#MainTitle {
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: -5%;
+    color: #E0E0E0;
+    
+    }
+
+#MainDescription {
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+/* Stylisation du menu de navigation */ 
+
+#Nav {
+    background-color: #252525;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    
+}
+
+.NavLabel {
+    font-size: 1.2em;
+    color: #BDBDBD;
+    text-decoration: dashed;
+}
+
+.NavLabel:hover {
+    background-color: #2e2e2e;
+    color: whitesmoke;
+}
+  
+.NavLabel:hover {
+    background-color: #2e2e2e;
+    color: whitesmoke;
+  }
+  
+.NavLabel:active {
+    background-color: #2e2e2e;
+    color: whitesmoke;
+  } 
+
+
+/* Stylisation du contenu de la page */ 
+
+
+
+
+
+
+    
+
+}
+
